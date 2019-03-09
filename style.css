@@ -1,0 +1,148 @@
+#back {
+  position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 33, 223), #66c2ff, #ffeee6);
+}
+
+/* Sun animation */
+
+.sun {
+  border-radius: 50%;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  animation-name: shine;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+#sun {
+  background: orange;
+  left: 50%;
+
+}
+
+@keyframes shine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.5)
+  }
+
+}
+
+/* The cloud animation */
+
+#cloud {
+  background: white;
+  left: 25%;
+}
+
+.cloudTop {
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  50% {
+    top: 52.5%;
+  }
+}
+
+
+
+.cloudBottom {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  top: 55%;
+  animation-name: extend;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes extend {
+  0% {
+    transform: scaleX(1)
+  }
+  50% {
+    transform: scaleX(1.5)
+  }
+  100% {
+    transform: scaleX(1)
+  }
+}
+
+#cloudR {
+  background: white;
+  left: 27.5%;
+}
+
+.cloudRight {
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  top: 52.5%;
+  animation-name: floatR;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatR {
+  0% {
+    left: 26.5%;
+  }
+  50% {
+    left: 27.5%;
+  }
+  100% {
+    left: 26.5%;
+  }
+}
+
+#cloudL {
+  background: white;
+  left: 22.5%;
+}
+
+.cloudLeft {
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  top: 52.5%;
+  animation-name: floatL;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatL {
+  0% {
+    left: 23.5%;
+  }
+  50% {
+    left: 22.5%;
+  }
+  100% {
+    left: 23.5%;
+  }
+}
